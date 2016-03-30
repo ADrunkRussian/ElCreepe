@@ -1,0 +1,16 @@
+Information					Description
+===========					===========
+
+
+/Modules/Searching/goofile
+/Modules/Searching/metagoofil
+/Modules/Searching/dmitry
+/Modules/Searching/
+
+Reconnaissance & Scanning 			Description
+=========================			===========
+
+
+/Modules/Scanning/nmap	
+/Modules/Scanning/nikto
+
