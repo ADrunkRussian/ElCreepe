@@ -3,7 +3,7 @@
 #Created by ADrunkRussian
 #Github.com/ADrunkRussian
 #Contact me on twitter @ADrunkRussian1
-# V1.3
+# V1.4
 
 import os
 import urllib2
@@ -23,8 +23,8 @@ while ans:
 	print '=============================================='
 	print 'For help type help\n'
 	ans=raw_input("ElCreepe > ")
-		
-	if ans=="Modules":
+
+	if ans.lower()=="modules":
 		os.system('cls' if os.name == 'nt' else 'clear')
 		with open('Modules.txt', 'r') as f:
 			for line in f:
@@ -48,18 +48,37 @@ while ans:
 				if ans.lower()=="all":
 					os.system("python Moduleupdate.py")
 					break
-	
+
 		if ans.lower()=="no" or ans.lower()=="n":
-						
+
 			ans=raw_input("So you're updating?\n")
 			if ans.lower()=="yes" or ans.lower()=="y":
 				os.system("sudo apt-get -y update | sudo apt-get -y upgrade")
 			if ans.lower()=="no" or ans.lower()=="n":
 				break
-		
 
+	if ans.lower()=="goofile":
+		print
+        	print '======================================================================'
+        	print '#                                          			    #'
+        	print '#               		     Goofile    		            #'
+        	print '#                                              			    #'
+        	print '======================================================================'
+        	print 'Goofile is a tool that scans a domain in order to locate a type of file.'
 
+        	goofdomain=raw_input("Please enter a domain. \nElCreepe > ")
 
+		gooftype=raw_input("\nPlease enter the types of files you would like to search for.\nEx. pdf \nPlease seperate by spaces \nElCreepe >")
 
+		os.system("goofile -d " + goofdomain + " -f " + gooftype)
 
+	if ans.lower()=="metagoofil":
+		print
+                print '======================================================================'
+                print '#                                                                    #'
+                print '#                             Goofile                                #'
+                print '#                                                                    #'
+                print '======================================================================'
+                print 'Goofile is a tool that scans a domain in order to locate a type of file.'
+                print 'For help type help\n'
 
